@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css" scoped>
+      .content-type1-list-wrapper ul {
+        list-style: none;
+        display: flex;
+        padding: 25px;
+        flex-wrap: wrap;
+      }
+      .content-type1-list-wrapper li {
+        border-bottom: 1px #d2d2d2 solid;
+        margin: 15px 5px 15px 5px;
+      }
+      .thumbnail {
+        display: block;
+        width: 500px;
+        height: 370px;
+        margin: 5px;
+      }
+      .title {
+        display: block;
+        margin-bottom: 15px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #4f4f4f;
+      }
+    </style>
+    <!-- タグ埋め込みに記載のscriptタグをコピペする -->
+  </head>
+  <body>
+    <content-type1-list data-item-page-path="article/item.html">
+      <img src="{%= content-type1_image %}" />
+      <div style="background: url('{%= content-type1_image %}');"></div>
+      <a href="{%= content-type1_#url %}" class="title"> {%= content-type1_title %} </a>
+    </content-type1-list>
+  </body>
+</html>

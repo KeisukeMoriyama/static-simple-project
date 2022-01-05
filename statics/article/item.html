@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css" scoped>
+      .content-type1-item-wrapper {
+        width: 80%;
+        margin: 0 auto;
+      }
+      .head {
+        font-weight: bold;
+        text-decoration: none;
+        color: #4f4f4f;
+      }
+      .thumbnail {
+        margin: 12px 0;
+      }
+    </style>
+    <!-- タグ埋め込みに記載のscriptタグをコピペする -->
+  </head>
+  <body>
+    <content-type1-item>
+      <h1 class="head">{%= content-type1_title %}</h1>
+      <img class="thumbnail" alt="" src="{%= content-type1_image %}" />
+      <div>{%= content-type1_description %}</div>
+      <div>
+        参照コンテンツ↓
+        <p>{%= content-type1_ref_description %}</p>
+        <image src="{%= content-type1_ref_image %}" />
+        <p>{%= content-type1_ref_title %}</p>
+      </div>
+    </content-type1-item>
+  </body>
+</html>
